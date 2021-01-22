@@ -29,13 +29,12 @@ function budgetCalculator(watch, phone, laptop) {
     }
     return total;
 }
-
 // 3rd-function
 function hotelCost(day) {
-    totalCost = 0;
-    costPerFirstTenDays = 100;
-    costPerSecondTenDays = 80;
-    costPerThirdTenDayToAnyDay = 50;
+    var totalCost = 0;
+    var costPerFirstTenDays = 100;
+    var costPerSecondTenDays = 80;
+    var costPerThirdTenDayToAnyDay = 50;
     if (day <= 10) {
         totalCost = day * costPerFirstTenDays;
     }
@@ -54,7 +53,7 @@ function hotelCost(day) {
     }
     return totalCost;
 }
-
+console.log(hotelCost(22))
 
 // 4th-function
 function megaFriend(friends) {
