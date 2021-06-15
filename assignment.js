@@ -16,12 +16,14 @@ function kilometerToMeter(kilometer) {
 // 2nd-function
 function budgetCalculator(watch, phone, laptop) {
     if (watch < 0 || phone < 0 || laptop < 0) {
-        return "product quantity can't be negetive";
+        return "product quantity can't be negative";
+        // wrong input should be add
     }
     else {
         var watchPrice = 50;
         var phonePrice = 100;
         var laptopPrice = 500;
+        // feedback : variables should outside of conditions.
         var totalWatchPrice = watch * watchPrice;
         var totalPhonePrice = phone * phonePrice;
         var totalLaptopPrice = laptop * laptopPrice;
@@ -29,6 +31,7 @@ function budgetCalculator(watch, phone, laptop) {
     }
     return total;
 }
+
 // 3rd-function
 function hotelCost(day) {
     var totalCost = 0;
@@ -53,7 +56,8 @@ function hotelCost(day) {
     }
     return totalCost;
 }
-console.log(hotelCost(22))
+
+// feedback: Negative value should be ignored. function to function gap should be 2 lines.
 
 // 4th-function
 function megaFriend(friends) {
@@ -66,3 +70,4 @@ function megaFriend(friends) {
     }
     return largestName;
 }
+
